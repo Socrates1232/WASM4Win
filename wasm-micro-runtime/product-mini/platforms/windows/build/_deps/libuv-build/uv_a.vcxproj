@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FC7A51A-156A-3897-BE51-13EA88B90FCE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>uv_a</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">uv_a.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">uv_a</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">uv_a.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">uv_a</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">uv_a.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">uv_a</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">uv_a.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">uv_a</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4201;4206;4210;4232;4456;4457;4459;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4100;4127;4201;4206;4210;4232;4456;4457;4459;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4100;4127;4201;4206;4210;4232;4456;4457;4459;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4201;4206;4210;4232;4456;4457;4459;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;COMPILING_WASM_RUNTIME_API=1;WASM_ENABLE_INTERP=1;WASM_ENABLE_AOT=1;WASM_ENABLE_LIBC_BUILTIN=1;WASM_ENABLE_LIBC_WASI=1;WASM_ENABLE_UVWASI=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\wasm\wasm-micro-runtime\core\iwasm\interpreter;D:\wasm\wasm-micro-runtime\core\iwasm\aot;D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\include;D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/wasm/wasm-micro-runtime/product-mini/platforms/windows -BD:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.21\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/wasm/wasm-micro-runtime/product-mini/platforms/windows -BD:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.21\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/wasm/wasm-micro-runtime/product-mini/platforms/windows -BD:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.21\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/wasm/wasm-micro-runtime/product-mini/platforms/windows -BD:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build --check-stamp-file D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.21\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\fs-poll.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\idna.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\inet.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\random.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\strscpy.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\threadpool.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\timer.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\uv-common.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\uv-data-getter-setters.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\version.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\async.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\core.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\detect-wakeup.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\dl.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\error.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\fs.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\fs-event.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\getaddrinfo.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\getnameinfo.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\handle.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\loop-watcher.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\pipe.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\thread.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\poll.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\process.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\process-stdio.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\signal.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\snprintf.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\stream.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\tcp.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\tty.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\udp.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\util.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\winapi.c" />
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src\src\win\winsock.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\ZERO_CHECK.vcxproj">
+      <Project>{C1C42798-660C-3047-9315-4047ADB5E88C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

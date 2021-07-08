@@ -1,0 +1,3 @@
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/CMakeFiles/libuv-populate.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/CMakeFiles/ZERO_CHECK.dir

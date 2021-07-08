@@ -1,0 +1,162 @@
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\7CA8299124225CDEEB5F1CBD8D41899A\LIBUV-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug/libuv-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\7CA8299124225CDEEB5F1CBD8D41899A\LIBUV-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/tmp/libuv-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug/libuv-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\7CA8299124225CDEEB5F1CBD8D41899A\LIBUV-POPULATE-UPDATE.RULE
+setlocal
+cd D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/tmp/libuv-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\7CA8299124225CDEEB5F1CBD8D41899A\LIBUV-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug/libuv-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\7CA8299124225CDEEB5F1CBD8D41899A\LIBUV-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug/libuv-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\7CA8299124225CDEEB5F1CBD8D41899A\LIBUV-POPULATE-BUILD.RULE
+setlocal
+cd D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug/libuv-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\7CA8299124225CDEEB5F1CBD8D41899A\LIBUV-POPULATE-INSTALL.RULE
+setlocal
+cd D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug/libuv-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\7CA8299124225CDEEB5F1CBD8D41899A\LIBUV-POPULATE-TEST.RULE
+setlocal
+cd D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\build\_deps\libuv-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug/libuv-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\A128337CC55D3D82F5F42EDC177808EA\LIBUV-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/CMakeFiles/Debug/libuv-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/libuv-populate-prefix/src/libuv-populate-stamp/Debug/libuv-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKEFILES\AA9C7E7A88099C0B3D5FE17D64D65DA7\LIBUV-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\WASM\WASM-MICRO-RUNTIME\PRODUCT-MINI\PLATFORMS\WINDOWS\BUILD\_DEPS\LIBUV-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild -BD:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild --check-stamp-file D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

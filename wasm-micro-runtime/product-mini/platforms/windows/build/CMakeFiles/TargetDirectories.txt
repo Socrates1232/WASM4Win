@@ -1,0 +1,14 @@
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/vmlib.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/iwasm.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/libiwasm.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/INSTALL.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/ALL_BUILD.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/CMakeFiles/ZERO_CHECK.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/NightlyMemoryCheck.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/Experimental.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/uv_a.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/uv.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/Continuous.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/Nightly.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/INSTALL.dir
+D:/wasm/wasm-micro-runtime/product-mini/platforms/windows/build/_deps/libuv-build/CMakeFiles/ALL_BUILD.dir

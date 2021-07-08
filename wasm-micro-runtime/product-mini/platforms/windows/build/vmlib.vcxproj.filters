@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\platform\windows\platform_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\platform\windows\win_malloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\platform\windows\win_memmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\platform\windows\win_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\platform\windows\win_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\mem-alloc\ems\ems_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\mem-alloc\ems\ems_hmu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\mem-alloc\ems\ems_kfc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\mem-alloc\mem_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\utils\bh_assert.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\utils\bh_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\utils\bh_hashmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\utils\bh_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\utils\bh_log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\utils\bh_queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\utils\bh_vector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\shared\utils\runtime_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-builtin\libc_builtin_wrapper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\deps\uvwasi\src\clocks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\deps\uvwasi\src\fd_table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\deps\uvwasi\src\path_resolver.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\deps\uvwasi\src\poll_oneoff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\deps\uvwasi\src\uv_mapping.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\deps\uvwasi\src\uvwasi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\deps\uvwasi\src\wasi_rights.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\deps\uvwasi\src\wasi_serdes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\libraries\libc-uvwasi\libc_uvwasi_wrapper.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\common\wasm_application.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\common\wasm_c_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\common\wasm_exec_env.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\common\wasm_memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\common\wasm_native.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\common\wasm_runtime_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\common\wasm_shared_memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\interpreter\wasm_interp_fast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\interpreter\wasm_loader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\interpreter\wasm_runtime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\aot\aot_loader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\aot\aot_runtime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\wasm\wasm-micro-runtime\core\iwasm\aot\arch\aot_reloc_x86_64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\wasm\wasm-micro-runtime\product-mini\platforms\windows\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="D:\wasm\wasm-micro-runtime\core\iwasm\common\arch\invokeNative_em64_simd.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F7A26C66-28F0-31CE-9202-2B2528F1BB4A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
