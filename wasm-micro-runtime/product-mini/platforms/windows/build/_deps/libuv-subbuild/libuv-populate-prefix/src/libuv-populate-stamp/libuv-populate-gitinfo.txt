@@ -1,3 +1,0 @@
-repository='https://github.com/libuv/libuv.git'
-module=''
-tag='origin'

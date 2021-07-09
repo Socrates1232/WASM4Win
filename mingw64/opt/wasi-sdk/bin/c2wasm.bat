@@ -1,0 +1,1 @@
+clang -O3 -o %1 %2 -I"D:\wasm\WASM4Win\mingw64\opt\wasi-sdk\share\wasi-sysroot\include" -L"D:\wasm\WASM4Win\mingw64\opt\wasi-sdk\share\wasi-sysroot\lib\wasm32-wasi" -B"D:\wasm\WASM4Win\mingw64\opt\wasi-sdk\share\wasi-sysroot\lib\wasm32-wasi"
